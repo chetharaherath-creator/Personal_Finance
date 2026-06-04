@@ -3,7 +3,7 @@
 A comprehensive personal finance and subscription tracking application built with React, Vite, TailwindCSS, and Firebase. This application allows users to track their expenses, manage subscriptions, and view financial summaries.
 
 ## Live Hosted URL
-**[Click here to view the live application on Firebase](INSERT_FIREBASE_URL_HERE)**
+**[Click here to view the live application on Firebase](https://fintrack-8f1ca.web.app)**
 
 ## Setup Instructions
 
