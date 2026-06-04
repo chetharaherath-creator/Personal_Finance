@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: "Lora", serif;
+}
+
+@layer base {
+  :root {
+    --primary: #422B23;
+    --secondary: #FADADD;
+    --accent: #FFF7F5;
+  }
+  
+  :root.dark {
+    --primary: #FFF7F5;
+    --secondary: #422B23;
+    --accent: #1C1210;
+  }
+
+  body {
+    @apply bg-accent text-primary transition-colors duration-300;
+  }
+}

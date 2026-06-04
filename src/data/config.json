@@ -1,0 +1,10 @@
+{
+  "appName": "Personal Finance Tracker",
+  "version": "1.0.0",
+  "buildDate": "2026",
+  "features": [
+    "Subscription Tracking",
+    "Expense Analytics",
+    "Progressive Web App (PWA)"
+  ]
+}

@@ -1,0 +1,31 @@
+.light {
+  background-color: #f8fafc;
+  color: #111827;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.theme-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ec4899;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 1000;
+}
+
+.theme-btn:hover {
+  opacity: 0.9;
+}
