@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { db, auth } from "../firebase/firebase";
-import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
+import { collection, getDocs, deleteDoc, doc, query, where } from "firebase/firestore";
 import { MdOutlineLightbulb } from "react-icons/md";
 
 import SubscriptionCard from "../components/SubscriptionCard";
@@ -23,8 +23,10 @@ function Dashboard() {
 
     const unsubscribe = auth.onAuthStateChanged(() => {
       async function loadSubscriptions() {
+        if (!auth.currentUser) return; // Prevent querying if completely logged out
+
         const querySnapshot = await getDocs(
-          collection(db, "subscriptions")
+          query(collection(db, "subscriptions"), where("userId", "==", auth.currentUser.uid))
         );
 
         const data = querySnapshot.docs.map((doc) => ({

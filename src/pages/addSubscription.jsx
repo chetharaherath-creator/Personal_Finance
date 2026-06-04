@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { db } from "../firebase/firebase";
+import { db, auth } from "../firebase/firebase";
 import { addDoc, collection } from "firebase/firestore";
 import InputField from "../components/inputField";
 
@@ -19,7 +19,8 @@ function AddSubscription() {
                 subscriptionName: subscriptionName,
                 category: category,
                 monthlyCost: monthlyCost,
-                renewalDate: renewalDate
+                renewalDate: renewalDate,
+                userId: auth.currentUser.uid
             });
             alert("Subscription Added Successfully!!")
         } catch (error) {
