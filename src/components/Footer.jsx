@@ -28,8 +28,8 @@ function Footer() {
 
                     {/* Social Icons */}
                     <div className="flex gap-4 text-xl text-gray-500">
-                        <a href="#" className="hover:text-pink-500 transition-colors"><FaTwitter /></a>
-                        <a href="#" className="hover:text-pink-500 transition-colors"><FaGithub /></a>
+                        <a href="#" aria-label="Twitter" className="hover:text-pink-500 transition-colors"><FaTwitter /></a>
+                        <a href="#" aria-label="GitHub" className="hover:text-pink-500 transition-colors"><FaGithub /></a>
                     </div>
 
                 </div>
