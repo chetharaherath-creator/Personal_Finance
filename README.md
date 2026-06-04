@@ -5,6 +5,9 @@ A comprehensive personal finance and subscription tracking application built wit
 ## Live Hosted URL
 **[Click here to view the live application on Firebase](https://fintrack-8f1ca.web.app)**
 
+## Firebase Console (Backend)
+**[Click here to view the Firebase Database & Auth Console](https://console.firebase.google.com/project/fintrack-8f1ca/overview)**
+
 ## Setup Instructions
 
 To run this project locally, follow these steps:
