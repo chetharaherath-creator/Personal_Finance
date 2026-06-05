@@ -14,7 +14,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [INSERT_GITHUB_REPO_URL]
+   git clone https://github.com/chetharaherath-creator/Personal_Finance
    cd Personal_Finance
    ```
 
